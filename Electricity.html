@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script type="text/javascript" src="calculate.js"></script>  
+				<style>
+					table, td {
+					border-collapse: collapse;
+					font-size:22px;
+					}
+					tr {
+					height: 50px;
+					width:100px;
+					}
+					table.center {
+					margin-left: auto;
+					margin-right: auto;
+					}
+					#rcorners {
+					border-radius: 50px;
+					border: 2px solid black;
+					width: 650px;
+					height: 270px;
+					background: #927D7B;
+
+					}
+					#mydiv{
+					text-align : center;
+					font-weight : bold;
+					font-size : 25px;
+					}
+					button {
+						border-radius: 8px;
+					  font-size: 16px;
+					  padding: 8px 18px;
+					}
+					
+				
+				</style>
+			</head>
+			<body>
+			<div><center><img  src="image2.jpg" alt="elec" width="600" height="180"></center>
+				<br><br><br><br>
+				<div id="mydiv">Domestic Electracity Bill Calculater</div>
+				<br>
+				<center>
+					<div id="rcorners"> 
+						<form>
+							<table class="center" >
+								  <tr>
+									    <td style="width:200px">
+										<label for="Units">No Of Units Used :</label>
+									</td>
+									    <td>
+										<input type="text"
+     											id="unit"
+     											name="unit"></td>
+										    <td>kWh</td>
+										  </tr>
+									  <tr>
+										    <td/>
+										    <td style="text-align:right">
+											<button type="button" onclick="document.getElementById('unit').value = ''"> Clear</button>
+										</td>
+										    <td/>
+										  </tr>
+									  <tr>
+										     <td/>
+										    <td style="text-align:right">
+											<button type="button" style="padding: 13px 23px" id="bill" onclick="Bill_Calculate()">Calculate My Bill</button></td>
+											    <td/>
+											  </tr>
+										  <tr>
+											     <td>Your Bill Amount is :</td>
+											    <td id="result">
+											    <td/>
+											  </tr>
+									</table>
+									
+								</form>
+							</div>
+							<br>
+							<table>
+										<tr>
+											<td style="width:450px"><a href="https://roar.media/english/life/reports/electricity-bill-calculated-analysis">
+											More information on how my bill is <br>calculated</a></td>
+											<td><a href="https://ceb.lk/" >Go to CEB website</a></td>
+										</tr>
+										
+										<tr>
+											<td colspan="2" style="text-align:center; text-decoration:underline;" ><br>Created by : Shashini Isurika Dias </td>
+										</tr>
+									</table>
+						</center>
+						</div>
+					</body>
+				</html>
